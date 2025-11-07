@@ -1,36 +1,32 @@
+// src/components/Hero.tsx
 import { MessageCircle, Mail, Send } from 'lucide-react';
 import heroBg from '../assets/1.png';
+import logo from '../assets/logo.png';
 
-<div
-  className="absolute inset-0 z-0"
-  style={{
-    backgroundImage: `url(${heroBg})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  }}
-/>
 export default function Hero() {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background image */}
       <div
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'url("src/assets/1.png")',
+          backgroundImage: `url(${heroBg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
       </div>
 
+      {/* NAV */}
       <nav className="absolute top-0 left-0 right-0 z-20 px-6 py-6">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <img
-  src="/src/assets/logo.png"
-  alt="DGN EXPORT Logo"
-  className="w-14 h-14 object-contain rounded-full border-2 border-white/20 bg-white/10"
-/>
+              src={logo}
+              alt="DGN EXPORT Logo"
+              className="w-14 h-14 object-contain rounded-full border-2 border-white/20 bg-white/10"
+            />
             <div className="text-white">
               <h1 className="text-xl font-bold tracking-wide">DGN EXPORT</h1>
               <p className="text-xs text-white/80">Premium Cotton from Turkmenistan</p>
@@ -45,6 +41,7 @@ export default function Hero() {
         </div>
       </nav>
 
+      {/* HERO CONTENT */}
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
         <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
           Premium Quality Cotton
@@ -105,7 +102,8 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
+      {/* Scroll cue */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
         <a href="#about" className="animate-bounce block">
           <div className="w-8 h-12 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
             <div className="w-1.5 h-3 bg-white/70 rounded-full"></div>
