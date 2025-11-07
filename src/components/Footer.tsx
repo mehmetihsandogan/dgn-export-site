@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
               <img
-  src="/logo.png"
+  src="/1logo.png"
   alt="DGN EXPORT Logo"
   className="w-14 h-14 object-contain rounded-full border-2 border-white/20 bg-white/10"
 />
