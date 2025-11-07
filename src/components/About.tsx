@@ -74,7 +74,7 @@ export default function About() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="src/assets/2.png"
+                src="/about-cotton.png"
                 alt="Cotton field"
                 className="w-full h-[600px] object-cover"
               />
