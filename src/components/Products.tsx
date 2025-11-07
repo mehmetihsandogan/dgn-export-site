@@ -1,17 +1,11 @@
 // src/components/Products.tsx
-import { Package, CheckCircle } from 'lucide-react';
-
-// ✅ Import images properly (so Vercel includes them in the build)
-import imgSeed from '../assets/seed-cotton.png';
-import imgLint from '../assets/lint-cotton.png';
-import imgLong from '../assets/long-staple.png';
-import imgOrganic from '../assets/organic-cotton.png';
+import { CheckCircle } from 'lucide-react';
 
 const products = [
   {
     name: 'Seed Cotton (Kütlü Pamuk)',
     grade: 'Raw Material',
-    image: imgSeed,
+    image: '/seed-cotton.png',
     features: [
       'Ideal for ginning',
       'Moisture: 8–10%',
@@ -22,7 +16,7 @@ const products = [
   {
     name: 'Lint Cotton (Lif Pamuk) — Grade 4',
     grade: 'Export Standard',
-    image: imgLint,
+    image: '/lint-cotton.png',
     features: [
       'Staple length: 28–30 mm',
       'Micronaire: 4.0–4.9',
@@ -33,7 +27,7 @@ const products = [
   {
     name: 'Long Staple Cotton',
     grade: 'Premium Selection',
-    image: imgLong,
+    image: '/long-staple.png',
     features: [
       'Superior softness',
       'High tensile strength',
@@ -44,7 +38,7 @@ const products = [
   {
     name: 'Organic Cotton',
     grade: 'Certified Eco-Friendly',
-    image: imgOrganic,
+    image: '/organic-cotton.png',
     features: [
       '100% pesticide-free',
       'Sustainably grown',
