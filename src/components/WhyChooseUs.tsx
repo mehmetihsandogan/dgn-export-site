@@ -102,7 +102,7 @@ export default function WhyChooseUs() {
 
             <div className="hidden lg:block h-full">
               <img
-                src="src/assets/4.png"
+                src="/last.png"
                 alt="Cotton quality"
                 className="w-full h-full object-cover"
               />
