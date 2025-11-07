@@ -3,7 +3,7 @@ import { CheckCircle } from 'lucide-react';
 
 const products = [
   {
-    name: 'Seed Cotton (Kütlü Pamuk)',
+    name: 'Seed Cotton',
     grade: 'Raw Material',
     image: '/seed-cotton.png',
     features: [
@@ -14,7 +14,7 @@ const products = [
     ],
   },
   {
-    name: 'Lint Cotton (Lif Pamuk) — Grade 4',
+    name: 'Lint Cotton',
     grade: 'Export Standard',
     image: '/lint-cotton.png',
     features: [
